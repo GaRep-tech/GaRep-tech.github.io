@@ -31,8 +31,8 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Gale </div>
-                <div <p id="demo"></p>
+                <div class="text-2">Galen </div>
+                <div <p id="demo"></p></div>
 <button onclick="typeWriter()">Click me</button>
 <script>
 var i = 0;
@@ -47,7 +47,7 @@ function typeWriter() {
   }
 }
 </script>
-                </div>
+            
   
             </div>
         </div>
