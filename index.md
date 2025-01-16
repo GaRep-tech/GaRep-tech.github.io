@@ -13,16 +13,12 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"> <span> Kapil</span></a></div>
+            <div class="logo"><a href="#"> <span> Hi!</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Skills</a></li>
-                <li><a href="#skills" class="menu-btn">Tech-Stack</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1yOoLELCuJExyDKeHiIHjv48feEd1OJh-/view?usp=sharing"
-                        class="menu-btn">Resume</a></li>
+               
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -35,7 +31,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Kapil </div>
+                <div class="text-2">Gale </div>
                 <div <p id="demo"></p>
 <button onclick="typeWriter()">Click me</button>
 <script>
