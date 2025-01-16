@@ -1,25 +1,13 @@
----
----
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-</head>
-
-
+<html>
 <body>
 
-<script>
-var i = 0;
-var txt = 'Coming Soon...';
-var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
-    </body>
+
+<h1>Great things are</h1>
+<div class="container">
+  <div class="typed-out">Coming soon...</div></div>
+
+
+</body>
 </html>
