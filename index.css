@@ -3,7 +3,7 @@ body{
   background: white;
   background-repeat: no-repeat;
   background-size: 300px 100px;
-  font-family: 'Trebuchet MS', sans-serif; 
+  font-family: "Times New Roman", Times, serif; 
 }
 .container{
   display: inline-block;
