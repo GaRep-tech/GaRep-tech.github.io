@@ -16,6 +16,7 @@ body{
   width: 0;
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    0% { left: 0; }
+  50% { left: calc( 100% - 50px ); }
+  100% { left: 0; }}
 }
