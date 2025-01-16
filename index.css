@@ -1,6 +1,8 @@
 body{
-  background: navajowhite;
-  background-size: cover;
+
+  background: white;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
   font-family: 'Trebuchet MS', sans-serif; 
 }
 .container{
@@ -8,15 +10,17 @@ body{
 }
 .typed-out{
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: .17em solid orange;
   white-space: nowrap;
-  animation: 
-    typing 1s ease-in-out infinite;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
   font-size: 1.6rem;
   width: 0;
 }
 @keyframes typing {
-    0% { left: 0; }
-  50% { left: calc( 100% - 50px ); }
-  100% { left: 0; }}
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: blue; }
 }
