@@ -52,5 +52,5 @@ function typeWriter() {
             </div>
         </div>
     </section>
-    </body
-</html
+    </body>
+</html>
