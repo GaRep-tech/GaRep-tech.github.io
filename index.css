@@ -17,6 +17,7 @@ body{
 
 .container2 > * {
   margin: 10px;
+  text-align: center;
 }
 
 .typed-out {
