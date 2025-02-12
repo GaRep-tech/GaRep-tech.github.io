@@ -5,8 +5,11 @@ body{
   background-size: 300px 100px;
   font-family: "Times New Roman", Times, serif; 
 }
-.container{
-  display: inline-block;
+.container {
+  display: flex;
+}
+.container > * {
+  margin: 10px;
 }
 .typed-out{
   overflow: hidden;
@@ -52,12 +55,6 @@ section {
     margin: 2rem;
     background-color: white;
     border-radius: 5px;
-}
-.container2 {
-  display: flex;
-}
-.container2 > * {
-  margin: 10px;
 }
 
 .flip-card {
