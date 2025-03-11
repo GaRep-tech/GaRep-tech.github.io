@@ -1,5 +1,6 @@
-function reset_animation() {
-  var el = document.getElementById('typed-out');
-  el.style.animation = 'none';
-  el.offsetHeight; /* trigger reflow */
-  el.style.animation = null; 
+// Add event listener to the contact form
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Send the form data to a server or API
+  console.log('Form submitted!');
+});
