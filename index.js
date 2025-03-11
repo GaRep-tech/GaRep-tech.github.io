@@ -1,6 +1,14 @@
-// Add event listener to the contact form
-document.querySelector('form').addEventListener('submit', (e) => {
+const form = document.querySelector('form');
+
+// Add event listener to the form
+form.addEventListener('submit', (e) => {
+  // Prevent the default form submission behavior
   e.preventDefault();
-  // Send the form data to a server or API
-  console.log('Form submitted!');
-});
+
+  // Get the form data
+  const formData = new FormData(form);
+
+  // Log the form data to the console
+  console.log(formData);
+})
+;
