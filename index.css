@@ -268,7 +268,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -319,33 +319,20 @@ section {
   display: inline-block;
   padding: 1rem;
   gap: 1rem;
+  color: #4c535a;
+  font-weight: bold;
 }
 
-.typed-out {
-  overflow: hidden;
-  border-right: 0.17em solid orange;
-  white-space: nowrap;
-  animation: typing 1s steps(20, end) forwards, blinking 0.8s infinite;
-  font-size: 1.6rem;
-  width: 0;
+#cursor {
+  color: #0072ef;
+  animation: blink 1s linear infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes blink {
+  0% {
+    opacity: 100%;
   }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blinking {
-  from {
-    border-color: transparent;
-  }
-
-  to {
-    border-color: blue;
+  50% {
+    opacity: 0%;
   }
 }
