@@ -1,27 +1,14 @@
-function reset_animation() {
-  var el = document.getElementById("typed-out");
-  el.style.animation = "none";
-  el.offsetHeight; /* trigger reflow */
-  el.style.animation = null; // reset animation
-}
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-
 /* Typewriter effect for a list of phrases*/
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 const phrases = [
-  "Database Rules Admin",
-  "Aspiring Web Developer",
-  "Tech Enthusiast",
+  "Under Construction",
+  "Check back later",
+  "New features coming soon"
 ];
-const el = document.getElementById("typewriter");
+const el = document.getElementById("painting");
 
 let sleepTime = 100;
 

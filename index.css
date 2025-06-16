@@ -22,6 +22,29 @@ p {
   color: rgba(85, 85, 85);
 }
 
+/* TYPED OUT ANIMATION */
+.type-container {
+  display: inline-block;
+  padding: 1rem;
+  gap: 1rem;
+  color: #4c535a;
+  font-weight: bold;
+}
+
+#cursor {
+  color: #0072ef;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
 /* TRANSITION*/
 
 a,
@@ -166,6 +189,8 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  align-self: center;
+  text-align: center;
 }
 
 .section__pic-container {
@@ -313,26 +338,42 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
-/* TYPED OUT ANIMATION */
-.type-container {
-  display: inline-block;
-  padding: 1rem;
-  gap: 1rem;
-  color: #4c535a;
-  font-weight: bold;
+#experience {
+  position: relative;
 }
 
-#cursor {
-  color: #0072ef;
-  animation: blink 1s linear infinite;
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+
+/* PROJECTS SECTION */
