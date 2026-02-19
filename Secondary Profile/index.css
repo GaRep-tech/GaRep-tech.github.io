@@ -1,0 +1,133 @@
+body{
+
+  background: white;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  font-family: "Times New Roman", Times, serif; 
+}
+
+.container {
+  display: inline-block;
+}
+.container2 {
+  display: flex;
+  padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2 > * {
+  margin: 10px;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: .17em solid orange;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent
+  }
+
+  to {
+    border-color: blue;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgb(126, 243, 221) 60%, rgb(190, 230, 233) 88%,
+      rgb(149, 103, 87) 40%, rgba(19, 183, 180, 0.603) 48%);
+  color: rgb(48, 90, 61);
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(24, 55, 192) 30%, rgb(20, 5, 91) 88%,
+      bisque 40%, rgb(29, 88, 147) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+section {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 5px;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
