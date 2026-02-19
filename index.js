@@ -19,7 +19,7 @@ function sleep(ms) {
 const phrases = [
   "Database Rules Admin",
   "Aspiring Web Developer",
-  "Tech Enthusiast",
+  "Technology Enthusiast",
 ];
 const el = document.getElementById("typewriter");
 
@@ -54,3 +54,11 @@ const writeLoop = async () => {
 };
 
 writeLoop();
+
+// Smooth scroll to top when 'Back to Top' button is clicked
+const toTopBtn = document.getElementById("to-top");
+if (toTopBtn) {
+  toTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}

@@ -45,6 +45,32 @@ p {
   }
 }
 
+/* Prevent layout shift when typing by reserving horizontal space */
+.type-container h2 {
+  display: inline-block;
+  margin: 0;
+}
+.type-container #typewriter {
+  display: inline-block;
+  min-width: 24ch; /* reserve width based on longest phrase */
+  text-align: left; /* text grows from the left so cursor follows */
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.type-container #cursor {
+  display: none; /* hide existing span; use pseudo-element cursor instead */
+}
+
+/* Use a pseudo-element on #typewriter so the cursor sits directly after text */
+.type-container #typewriter::after {
+  content: "|";
+  color: #0072ef;
+  margin-left: 0.25ch;
+  display: inline-block;
+  vertical-align: middle;
+  animation: blink 1s linear infinite;
+}
+
 /* TRANSITION*/
 
 a,
@@ -409,6 +435,28 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+}
+
+/* Back to top button in contact section */
+.to-top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#to-top {
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+#to-top:hover {
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
 .contact-info-upper-container {
